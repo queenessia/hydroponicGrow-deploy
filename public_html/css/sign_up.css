@@ -1,0 +1,265 @@
+.amita-regular {
+    font-family: "Amita", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amita-bold {
+    font-family: "Amita", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #F8F6DF, #5D9F59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.logo-section img {
+    height: 40px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.logo-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2A4E17;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    text-align: left;
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2A4E17;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    pointer-events: auto;
+    box-sizing: border-box;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    cursor: pointer;
+    color: #5D9F59;
+}
+
+.link {
+    margin-top: 10px;
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2A4E17;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.signup-button:hover {
+    background-color: #1E3A0F;
+}
+
+/* Media Queries untuk Responsiveness */
+
+/* Tablet (768px dan ke bawah) */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+        padding: 0 10px;
+    }
+    
+    .box {
+        padding: 18px;
+    }
+    
+    .title {
+        font-size: 22px;
+    }
+    
+    .logo-section h2 {
+        font-size: 22px;
+    }
+    
+    .logo-section img {
+        height: 36px;
+    }
+}
+
+/* Mobile (480px dan ke bawah) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
+    .container {
+        max-width: 100%;
+        padding: 0 5px;
+    }
+    
+    .box {
+        padding: 15px;
+        margin: 0 5px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    .logo-section {
+        margin-bottom: 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .logo-section img {
+        height: 32px;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .logo-section h2 {
+        font-size: 20px;
+    }
+    
+    input {
+        padding: 12px;
+        font-size: 16px; /* Mencegah zoom pada iOS */
+    }
+    
+    .password-toggle {
+        right: 12px;
+        top: 38px;
+    }
+    
+    .signup-button {
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .input-group {
+        margin: 12px 0;
+    }
+}
+
+/* Mobile kecil (320px dan ke bawah) */
+@media screen and (max-width: 320px) {
+    body {
+        padding: 10px;
+    }
+    
+    .box {
+        padding: 12px;
+        margin: 0 2px;
+    }
+    
+    .title {
+        font-size: 18px;
+    }
+    
+    .logo-section h2 {
+        font-size: 18px;
+    }
+    
+    .logo-section img {
+        height: 28px;
+    }
+    
+    input {
+        padding: 10px;
+    }
+    
+    .password-toggle {
+        right: 10px;
+        top: 35px;
+    }
+}
+
+/* Landscape orientation untuk mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    body {
+        min-height: auto;
+        padding: 10px;
+    }
+    
+    .logo-section {
+        margin-bottom: 10px;
+    }
+    
+    .box {
+        padding: 15px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .input-group {
+        margin: 8px 0;
+    }
+}
